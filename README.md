@@ -6,6 +6,9 @@
 * [Match a Literal String with Different Possibilities](#match-literal-strings-with-diffrent0poaaibilities)
 * [Ignore Case While Matching](#ignore-case-while-matching)
 * [Extract Matches](#extract-matches)
+* [Find More Than the First Match](#find-more-than-the-first-match)
+* [Match Anything with Wildcard Period](#match-anything-with-wildcard-period)
+* [Match Single Character with Multiple Possibilities](#match-single-haracter-with-multiple-possibilities)
 
 ## General info
 Regular expressions are used in programming languages to match parts of strings. You create patterns to help you do that matching.
@@ -27,3 +30,12 @@ the i flag ignores case.
 
 ## Extract Matches
 Use the .match() method, apply the method on a string and pass in the regex inside the parentheses.
+
+## Find More Than the First Match
+To search or extract a pattern more than once use the g flag.
+
+## Match Anything with Wildcard Period
+The wildcard character . will match any one character.
+
+## Match Single Character with Multiple Possibilities
+Search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square ([ and ]) brackets.
