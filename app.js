@@ -61,8 +61,32 @@ let result11 = miceSample.match(NRegex);
 // console.log(result11)
 
 // Using the plus character
-let spelling = "Mississsssippi is stunning.";
-let ssRegex = /s+/gi; // Change this line
-let result12 = spelling.match(ssRegex);
+let spellingM = "Mississsssippi is stunning.";
+let ssRegex = /s+/gi; 
+let result12 = spellingM.match(ssRegex);
 // console.log(result12)
+
+// Using the asterisk character
+let soccerWord = "gooooooooal!";
+let gPhrase = "I have a gut feeling";
+let oPhrase = "over the moon";
+let goRegex = /go*/;
+let result13 = soccerWord.match(goRegex); 
+let result14 = gPhrase.match(goRegex);
+let result15 = oPhrase.match(goRegex);
+// console.log(result13, result14, result15)
+
+// Lazy Matching
+let text = "<h1>Hello, aliens!</h1>";
+let myRegex = /<.*?>/; 
+let result16 = text.match(myRegex);
+// console.log(result16)
+
+// Match Beginning String Patterns
+let firstString = "Rick and Morty!";
+let firstRegex = /^Rick/;
+result17 = firstRegex.test(firstString);
+let notFirst = "Morty and Rick!";
+result18 = firstRegex.test(notFirst);
+// console.log(result17, result18)
 
