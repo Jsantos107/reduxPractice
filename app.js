@@ -16,7 +16,7 @@ let pet = /dog|cat|bird|fish/;
 let result3 = pet.test(jj);
 // console.log(result3)
 
-// Ignore Case While Matching
+// Insensitive flag
 let string = "I will Change for CHANGE, and not just change.";
 let findAllCase = /change/i;
 let result4 = findAllCase.test(string);
@@ -28,7 +28,7 @@ let codingRegex = /aliens/;
 let result5 = extractStr.match(codingRegex);
 // console.log(result5)
 
-//Find More Than the First Match
+//Global flag
 let story2 = "Somewhere JJ is hiding in this text. We also need to find jj and Jj.";
 let findRegex = /jj/ig;
 let result6 = story2.match(findRegex);
@@ -44,6 +44,25 @@ let result8 =huRegex.test(hugStr);
 
 // Match Single Character with Multiple Possibilities
 let quoteSample = "Oooooooooookay, we are going to find all vowels in this sentence EXCEPT for 'o'.";
-let vowelRegex = /[aeiu]/gi; // Change this line
-let result9 = quoteSample.match(vowelRegex); // Change this line
+let vowelRegex = /[aeiu]/gi;
+let result9 = quoteSample.match(vowelRegex);
 // console.log(result9)
+
+// Match letters and numbers using Hyphen
+let findSample = "The quick brown fox jumped over the lazy dog 37.5 times.";
+let alphabetRegex = /[a-z0-9]/ig;
+let resultX = findSample.match(alphabetRegex);
+// console.log(resultX)
+
+// Negated character set
+let miceSample = "3 blind mice ran into the wall.";
+let NRegex = /[^aeiou0-9]/ig 
+let result11 = miceSample.match(NRegex);
+// console.log(result11)
+
+// Using the plus character
+let spelling = "Mississsssippi is stunning.";
+let ssRegex = /s+/gi; // Change this line
+let result12 = spelling.match(ssRegex);
+// console.log(result12)
+
