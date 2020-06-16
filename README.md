@@ -12,6 +12,9 @@
 * [Match letters and numbers using Hyphen](#match-letters-and-numbers-using-hyphen)
 * [Negated character set](#negated-character-set)
 * [Using the plus character](#using-the-plus-character)
+* [Using the asterisk character](#using-the-asterisk-character)
+* [Lazy Matching](#lazy-matching)
+* [Match Beginning String Patterns](#match-beginning-string-patterns)
 
 
 ## General info
@@ -56,3 +59,12 @@ To create a negated character set, place a caret character (^) after the opening
 
 ## Using the plus character
 You can use the + character to check if that is the case. The character or pattern has to be present consecutively. That is, the character has to repeat one after the other.
+
+## Using the asterisk character
+matches characters that occur zero or more times.
+
+## Lazy Matching
+a lazy match, finds the smallest possible part of the string that satisfies the regex pattern.
+
+## Match Beginning String Patterns
+Outside of a character set, the caret is used to search for patterns at the beginning of strings.
