@@ -61,8 +61,8 @@ let result11 = miceSample.match(NRegex);
 // console.log(result11)
 
 // Using the plus character
-let spelling = "Mississsssippi is stunning.";
-let ssRegex = /s+/gi; // Change this line
-let result12 = spelling.match(ssRegex);
+let spellingM = "Mississsssippi is stunning.";
+let ssRegex = /s+/gi; 
+let result12 = spellingM.match(ssRegex);
 // console.log(result12)
 
