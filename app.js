@@ -90,3 +90,24 @@ let notFirst = "Morty and Rick!";
 result18 = firstRegex.test(notFirst);
 // console.log(result17, result18)
 
+// Match Ending String Patterns
+let thisString = "Rick and Morty";
+let frRegex = /Rick$/;
+result19 = frRegex.test(thisString);
+let nott = "Morty and Rick";
+result20 = frRegex.test(nott);
+// console.log(result19, result20)
+
+// Match All Letters and Numbers
+let sample4 = "Hello, aliens!30";
+let alphabetRegexV2 = /\w/g;
+let result21 = sample4.match(alphabetRegexV2);
+// console.log(result21)
+
+// Match Everything But Letters and Numbers
+let sample42 = "Hello, aliens!30";
+let alphabetRegexV42 = /\W/g;
+let result22 = sample42.match(alphabetRegexV42);
+// console.log(result22)
+
+
