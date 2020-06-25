@@ -15,7 +15,9 @@
 * [Using the asterisk character](#using-the-asterisk-character)
 * [Lazy Matching](#lazy-matching)
 * [Match Beginning String Patterns](#match-beginning-string-patterns)
-
+* [Match Ending String Patterns](#Match-ending-string-patterns)
+* [Match All Letters and Numbers](#match-all-letters-and-numbers)
+* [Match Everything But Letters and Numbers](#match-everything-but-letters-and-numbers)
 
 ## General info
 Regular expressions are used in programming languages to match parts of strings. You create patterns to help you do that matching.
@@ -68,3 +70,13 @@ a lazy match, finds the smallest possible part of the string that satisfies the 
 
 ## Match Beginning String Patterns
 Outside of a character set, the caret is used to search for patterns at the beginning of strings.
+
+## Match Ending String Patterns
+search the end of strings using the dollar sign character $ at the end of the regex.
+
+## Match All Letters and Numbers
+\w. This shortcut is equal to [A-Za-z0-9_]. This character class matches upper and lowercase letters plus numbers. Note, this character class also includes the underscore character (_).
+
+## Match Everything But Letters and Numbers
+ Search for the opposite of the \w with \W. Note, the opposite pattern uses a capital letter. This shortcut is the same as [^A-Za-z0-9_].
+
