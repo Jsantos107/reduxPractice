@@ -18,6 +18,10 @@
 * [Match Ending String Patterns](#Match-ending-string-patterns)
 * [Match All Letters and Numbers](#match-all-letters-and-numbers)
 * [Match Everything But Letters and Numbers](#match-everything-but-letters-and-numbers)
+* [Match All Numbers](#match-all-numbers)
+* [Match All Non-Numbers](#match-all-non-numbers)
+* [Match Whitespace](#match-whitespace)
+
 
 ## General info
 Regular expressions are used in programming languages to match parts of strings. You create patterns to help you do that matching.
@@ -75,8 +79,16 @@ Outside of a character set, the caret is used to search for patterns at the begi
 search the end of strings using the dollar sign character $ at the end of the regex.
 
 ## Match All Letters and Numbers
-\w. This shortcut is equal to [A-Za-z0-9_]. This character class matches upper and lowercase letters plus numbers. Note, this character class also includes the underscore character (_).
+\w. This shortcut is equal to [A-Za-z0-9_]. This character class matches upper and lowercase letters plus numbers. Note, this character class also includes the underscore characteMatch Whitespacer (_).
 
 ## Match Everything But Letters and Numbers
  Search for the opposite of the \w with \W. Note, the opposite pattern uses a capital letter. This shortcut is the same as [^A-Za-z0-9_].
 
+## Match All Numbers
+The shortcut to look for digit characters is \d, with a lowercase d. This is equal to the character class [0-9], which looks for a single character of any number between zero and nine.
+
+## Match All Non-Numbers
+The shortcut to look for non-digit characters is \D. This is equal to the character class [^0-9], which looks for a single character that is not a number between zero and nine.
+
+## Match Whitespace
+You can search for whitespace using \s, which is a lowercase s. This pattern not only matches whitespace, but also carriage return, tab, form feed, and new line characters. Think of it as similar to the character class [\r\t\f\n\v].

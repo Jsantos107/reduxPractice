@@ -110,4 +110,20 @@ let alphabetRegexV42 = /\W/g;
 let result22 = sample42.match(alphabetRegexV42);
 // console.log(result22)
 
+// Match All Numbers
+let name = "107Santos";
+let numRegex = /\d/g;
+let result23 = name.match(numRegex);
+// console.log(result23)
 
+// Match All Non-Numbers
+let nonName = "107Santos";
+let noNumRegex = /\D/g;
+let result24 = nonName.match(noNumRegex);
+// console.log(result24)
+
+// Match Whitespace
+let sample25 = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g;
+let result25 = sample25.match(countWhiteSpace).length;
+// console.log(result25)
