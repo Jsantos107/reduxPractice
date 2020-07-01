@@ -21,6 +21,9 @@
 * [Match All Numbers](#match-all-numbers)
 * [Match All Non-Numbers](#match-all-non-numbers)
 * [Match Whitespace](#match-whitespace)
+* [Match Non-Whitespace Characters](#match-non-whitespace-characters)
+* [Specify Upper and Lower Number of Matches](#specify-upper-and-lower-number-of-matches)
+* [Specify Only the Lower Number of Matches](#specify-only-the-lower-number-of-matches)
 
 
 ## General info
@@ -28,7 +31,7 @@ Regular expressions are used in programming languages to match parts of strings.
 
 ## .test method
 JavaScript has multiple ways to use regexes. One way to test a regex is using the .test() method. The .test() method takes the regex, applies it to a string, and returns true or false if your pattern finds something or not.
-
+Match Non-Whitespace Characters
 ## Match Literal Strings
 This means that regex will search for a literal match of the string, any other forms of the string will not match. For example, the regex /Jorge/ will not match "jorge" or "JORGE".
 
@@ -50,7 +53,7 @@ To search or extract a pattern more than once use the g flag.
 ## Match Anything with Wildcard Period
 The wildcard character . will match any one character.
 
-## Match Single Character with Multiple Possibilities
+## Match Single CharactNer with Multiple Possibilities
 Search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square ([ and ]) brackets.
 
 ## Match letters and numbers using Hyphen
@@ -80,7 +83,7 @@ search the end of strings using the dollar sign character $ at the end of the re
 
 ## Match All Letters and Numbers
 \w. This shortcut is equal to [A-Za-z0-9_]. This character class matches upper and lowercase letters plus numbers. Note, this character class also includes the underscore characteMatch Whitespacer (_).
-
+Specify Only the Lower Number of Matches
 ## Match Everything But Letters and Numbers
  Search for the opposite of the \w with \W. Note, the opposite pattern uses a capital letter. This shortcut is the same as [^A-Za-z0-9_].
 
@@ -89,6 +92,15 @@ The shortcut to look for digit characters is \d, with a lowercase d. This is equ
 
 ## Match All Non-Numbers
 The shortcut to look for non-digit characters is \D. This is equal to the character class [^0-9], which looks for a single character that is not a number between zero and nine.
-
+Match Non-Whitespace Characters
 ## Match Whitespace
 You can search for whitespace using \s, which is a lowercase s. This pattern not only matches whitespace, but also carriage return, tab, form feed, and new line characters. Think of it as similar to the character class [\r\t\f\n\v].
+
+## Match Non-Whitespace Characters
+Search for non-whitespace using \S. This pattern will not match whitespace, carriage return, tab, form feed, and new line characters. You can think of it being similar to the character class [^\r\t\f\n\v].
+
+## Specify Upper and Lower Number of Matches
+Specify the lower and upper number of patterns with quantity specifiers. Quantity specifiers are used with curly brackets ({ and }). You put two numbers between the curly brackets - for the lower and upper number of patterns.
+
+## Specify Only the Lower Number of Matches
+To only specify the lower number of patterns, keep the first number followed by a comma.

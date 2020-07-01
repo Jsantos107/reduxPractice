@@ -127,3 +127,22 @@ let sample25 = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g;
 let result25 = sample25.match(countWhiteSpace).length;
 // console.log(result25)
+
+// Match Non-Whitespace Characters
+let sample26 = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; 
+let result26 = sample26.match(countNonWhiteSpace);
+// console.log(result26)
+
+// Specify Upper and Lower Number of Matches
+let ohStr = "Jooorge";
+let ohRegex = /jo{3,6}rge/i; // Change this line
+let result27 = ohRegex.test(ohStr);
+// console.log(result27)
+
+// Specify Only the Lower Number of Matches
+let haStr = "Jooooorge";
+let haRegex = /jo{4,}rge/i; // Change this line
+let result28 = haRegex.test(haStr);
+// console.log(result28)
+
