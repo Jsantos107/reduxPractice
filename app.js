@@ -136,13 +136,40 @@ let result26 = sample26.match(countNonWhiteSpace);
 
 // Specify Upper and Lower Number of Matches
 let ohStr = "Jooorge";
-let ohRegex = /jo{3,6}rge/i; // Change this line
+let ohRegex = /jo{3,6}rge/i; 
 let result27 = ohRegex.test(ohStr);
 // console.log(result27)
 
 // Specify Only the Lower Number of Matches
 let haStr = "Jooooorge";
-let haRegex = /jo{4,}rge/i; // Change this line
+let haRegex = /jo{4,}rge/i; 
 let result28 = haRegex.test(haStr);
 // console.log(result28)
+
+// Specify Exact Number of Matches
+let tosStr = "SANNNNNTOS";
+let sanStr = "SANntos";
+let timRegex = /san{5}tos/i;
+let result29 = timRegex.test(sanStr);
+let result30 = timRegex.test(tosStr);
+// console.log(result29, result30)
+
+// Check for All or None
+let favWord = "delicious";
+let favoWord = "delicioso";
+let favRegex = /deliciou?so?/;
+let result31 = favRegex.test(favWord);
+let result32 = favRegex.test(favoWord);
+// console.log(result31, result32)
+
+// Positive and Negative Lookahead
+let sampleWord = "astronaut";
+let sample22Word = "astronaut22";
+let pwRegex = /(?=\w{5,})|(?=\w*\d{2})/; 
+let result33 = pwRegex.test(sampleWord);
+let result34 = pwRegex.test(sampleWord);
+// console.log(result33, result34)
+
+
+
 

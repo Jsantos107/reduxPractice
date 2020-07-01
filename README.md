@@ -24,6 +24,9 @@
 * [Match Non-Whitespace Characters](#match-non-whitespace-characters)
 * [Specify Upper and Lower Number of Matches](#specify-upper-and-lower-number-of-matches)
 * [Specify Only the Lower Number of Matches](#specify-only-the-lower-number-of-matches)
+* [Specify Exact Number of Matches](#specify-exact-number-of-matches)
+* [Check for All or None](#check-for-all-or-none)
+* [Positive and Negative Lookahead](#positive-and-negative-lookahead)
 
 
 ## General info
@@ -104,3 +107,18 @@ Specify the lower and upper number of patterns with quantity specifiers. Quantit
 
 ## Specify Only the Lower Number of Matches
 To only specify the lower number of patterns, keep the first number followed by a comma.
+
+## Specify Exact Number of Matches
+To specify a certain number of patterns, just have that one number between the curly brackets.
+
+## Check for All or None
+You can specify the possible existence of an element with a question mark, ?. This checks for zero or one of the preceding element. You can think of this symbol as saying the previous element is optional.
+
+## Positive and Negative Lookahead
+Lookaheads are patterns that tell JavaScript to look-ahead in your string to check for patterns further along. This can be useful when you want to search for multiple patterns over the same string.
+
+There are two kinds of lookaheads: positive lookahead and negative lookahead.
+
+A positive lookahead will look to make sure the element in the search pattern is there, but won't actually match it. A positive lookahead is used as (?=...) where the ... is the required part that is not matched.
+
+On the other hand, a negative lookahead will look to make sure the element in the search pattern is not there. A negative lookahead is used as (?!...) where the ... is the pattern that you do not want to be there. The rest of the pattern is returned if the negative lookahead part is not present.
