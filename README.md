@@ -75,6 +75,7 @@ matches characters that occur zero or more times.
 ## Lazy Matching
 a lazy match, finds the smallest possible part of the string that satisfies the regex pattern.
 
+ ⚙ jorge-santos@tess  ~/flatiron/playground/reduxPractice   loba 🐻 
 ## Match Beginning String Patterns
 Outside of a character set, the caret is used to search for patterns at the beginning of strings.
 
