@@ -27,6 +27,10 @@
 * [Specify Exact Number of Matches](#specify-exact-number-of-matches)
 * [Check for All or None](#check-for-all-or-none)
 * [Positive and Negative Lookahead](#positive-and-negative-lookahead)
+* [Check For Mixed Grouping of Characters](#check-for-mixed-grouping-of-characters)
+* [Reuse Patterns Using Capture Groups](#reuse-patterns-using-capture-groups)
+* [Use Capture Groups to Search and Replace](#use-capture-groups-to-search-and-replace)
+
 
 
 ## General info
@@ -122,3 +126,14 @@ There are two kinds of lookaheads: positive lookahead and negative lookahead.
 A positive lookahead will look to make sure the element in the search pattern is there, but won't actually match it. A positive lookahead is used as (?=...) where the ... is the required part that is not matched.
 
 On the other hand, a negative lookahead will look to make sure the element in the search pattern is not there. A negative lookahead is used as (?!...) where the ... is the pattern that you do not want to be there. The rest of the pattern is returned if the negative lookahead part is not present.
+
+## Check For Mixed Grouping of Characters
+For groups of characters using a Regular Expression and to achieve that we use parentheses ().
+
+## Reuse Patterns Using Capture Groups.
+You can search for repeat substrings using capture groups. Parentheses, ( and ), are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses.
+
+To specify where that repeat string will appear, you use a backslash (\) and then a number. This number starts at 1 and increases with each additional capture group you use. An example would be \1 to match the first group.
+
+## Use Capture Groups to Search and Replace
+You can search and replace text in a string using .replace() on a string. The inputs for .replace() is first the regex pattern you want to search for. The second parameter is the string to replace the match or a function to do something.

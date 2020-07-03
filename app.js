@@ -170,6 +170,26 @@ let result33 = pwRegex.test(sampleWord);
 let result34 = pwRegex.test(sampleWord);
 // console.log(result33, result34)
 
+// Check For Mixed Grouping of Characters
+let intStr = "Saint";
+let ntoStr = "Santo";
+let saRegex = /sa(int|nto)/i;
+let result35 = saRegex.test(intStr);
+let result36 = saRegex.test(ntoStr);
+// console.log(result35, result36)
+
+// Reuse Patterns Using Capture Groups
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/;
+let result37 = reRegex.test(repeatNum);
+// console.log(result37)
+
+// Use Capture Groups to Search and Replace
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/;
+let replaceText = "$3 $2 $1"; 
+let result38 = str.replace(fixRegex, replaceText);
+// console.log(result38)
 
 
 
