@@ -191,5 +191,25 @@ let replaceText = "$3 $2 $1";
 let result38 = str.replace(fixRegex, replaceText);
 // console.log(result38)
 
+//
 
+const someString = "Cat"
+const didItMatch = /[cC]at/.test(someString)
+// console.log(didItMatch)
 
+let someStringM = "Cat cat dog Catt"
+let matchString = /cat/ig
+let some = someStringM.match(matchString)
+// console.log(some)
+
+const superheros = [
+    "Superman",
+    "Batman",
+    "Womder Women",
+    "Spiderman"
+]
+
+const filteredHeros = superheros.filter(hero => {
+    return /b.*/i.test(hero)
+})
+console.log(filteredHeros)
